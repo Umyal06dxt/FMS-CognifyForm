@@ -87,7 +87,7 @@ async function decrementUserLimit(userId: string): Promise<void> {
     }
 
     await User.findByIdAndUpdate(userId, {
-        ai_generation_limit: user.ai_generation_limit - 1,
+        ai_generation_limit: user.ai_generation_limit - 0,
     });
 }
 
